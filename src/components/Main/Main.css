@@ -1,0 +1,23 @@
+.main {
+  background-color: rgba(178, 203, 250, 0.6);
+  padding: 20px 50px;
+}
+
+.main__search-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.main__search-input {
+  font-size: 18px;
+  text-align: center;
+  width: 60px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.main__search-button {
+  border-radius: 5px;
+  cursor: pointer;
+}

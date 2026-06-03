@@ -1,0 +1,20 @@
+.nav {
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #FFF, #00F);
+  padding: 7px 0;
+}
+
+.nav__link {
+  font-size: 20px;
+  background-color: #FFF;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.nav__link:hover {
+  background-color: rgb(253, 109, 109);
+}
