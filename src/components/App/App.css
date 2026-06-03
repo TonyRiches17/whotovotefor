@@ -1,1 +1,4 @@
-
+.app {
+  background-image: url("../../assets/flag.jpg");
+  background-size: 600px;
+}
