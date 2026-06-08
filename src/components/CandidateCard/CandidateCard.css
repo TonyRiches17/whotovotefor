@@ -24,7 +24,7 @@
   width: 25px;
   height: 200px;
   background-color: rgba(255, 255, 255, .8);
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 0 0;
   margin: 0;
 }
 
@@ -38,7 +38,7 @@
   height: 200px;
   background-color: blue;
   color: white;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 0 0;
   margin: 0;
 }
 
@@ -52,12 +52,12 @@
   height: 200px;
   background-color: red;
   color: white;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 0 0;
   margin: 0;
 }
 
 .candidate__name-state-district {
-  width: 175px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
