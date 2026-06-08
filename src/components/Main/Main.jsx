@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Main.css";
 import { getCandidates } from "../../api.js";
+import { possibleStates } from "../../constants.js";
 import CandidateCard from "../CandidateCard/CandidateCard";
 
 function Main() {
@@ -10,20 +11,23 @@ function Main() {
 const handleSubmit = (evt) => {
   evt.preventDefault();
 
+  const validState = possibleStates.some((s) => s.toLowerCase() === selectedState.trim().toLowerCase());
+
+  if(!validState) {
+    return alert("Please enter a valid State");
+  }
+
   getCandidates()
     .then((data) => {
       const filteredMembers = data.members.filter(
         (member) =>
-          member.state.toLowerCase() === selectedState.toLowerCase()
+          member.state.toLowerCase() === selectedState.trim().toLowerCase()
       );
 
       setCandidates(filteredMembers);
     })
     .catch((error) => console.error(error));
-
 };
-
-console.log(candidates);
 
 
   return(
@@ -44,6 +48,9 @@ console.log(candidates);
       <div className="main__results">
         <CandidateCard candidates={candidates} />
       </div>
+    )}
+    {candidates.length === 0 && (
+      <p className="main__results-none">There are no Representatives listed for this State</p>
     )}
     </div>
   )
