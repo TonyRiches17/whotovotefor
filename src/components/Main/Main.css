@@ -12,13 +12,32 @@
 .main__search-input {
   font-size: 18px;
   text-align: center;
-  width: max-content;
+  width: 150px;
   border-radius: 5px;
   padding: 5px;
+  margin: 0 0 40px 0;
 }
 
 .main__search-button {
+  height: 35px;
   border-radius: 5px;
   background-color: #FFF;
   cursor: pointer;
+}
+
+@media screen and (max-width: 775px) {
+  .main__search-container {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    padding: 20px 15px;
+  }
+
+  .main__search-container {
+    gap: 0;
+  }
+
 }

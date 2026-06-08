@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Main.css";
-import { getCandidates, getCandidatesInfo } from "../../api.js";
+import { getCandidates } from "../../api.js";
 import CandidateCard from "../CandidateCard/CandidateCard";
 
 function Main() {
@@ -23,13 +23,7 @@ const handleSubmit = (evt) => {
 
 };
 
-const handleCandidateClick = (bioguideId) => {
-  getCandidatesInfo(bioguideId)
-    .then((data) => {
-      console.log(data);
-    })
-    .catch((error) => console.error(error));
-};
+console.log(candidates);
 
 
   return(
@@ -48,7 +42,7 @@ const handleCandidateClick = (bioguideId) => {
       </div>
     {candidates.length > 0 && (
       <div className="main__results">
-        <CandidateCard candidates={candidates} handleCandidateClick={handleCandidateClick} />
+        <CandidateCard candidates={candidates} />
       </div>
     )}
     </div>

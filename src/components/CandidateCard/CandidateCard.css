@@ -1,0 +1,78 @@
+.candidate {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.candidate__pic-party {
+  display: flex;
+  align-items: center;
+}
+
+.candidate__pic {
+  width: 175px;
+  height: 200px;
+}
+
+.candidate__party {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  width: 25px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, .8);
+  border-radius: 0 5px 5px 0;
+  margin: 0;
+}
+
+.candidate__party_D {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  width: 25px;
+  height: 200px;
+  background-color: blue;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  margin: 0;
+}
+
+.candidate__party_R {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  width: 25px;
+  height: 200px;
+  background-color: red;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  margin: 0;
+}
+
+.candidate__name-state-district {
+  width: 175px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, .8);
+  border-radius: 0 0 5px 5px;
+}
+
+.candidate__name {
+  margin: 0;
+}
+
+.candidate__state {
+  margin: 0;
+}
+
+.candidate__district {
+  margin: 0;
+}

@@ -1,8 +1,8 @@
-# Who to Vote For
+# Who You Voted For
 
 ## Description
 
-This website is designed for citizens who are interested in learning more about the politicians running for office in their respective municipality/city/county/state, and any associated bills; to give them a greater understanding of who they should vote for.
+This website is designed for citizens who are interested in learning more about the politicians running for office in their respective areas at the Representative level. It will give them a greater understanding of who they should vote for, and their incumbent's stances after researching their respective websites.
 
 ### Technologies Used
 
@@ -34,5 +34,5 @@ This project required functionality of the website at all resolutions to include
 
 ### The link below will lead directly to the project online:
 
-[Deployment Link](https://whotovotefor.netlify.app)
+[Deployment Link](https://whoyouvotedfor.netlify.app)
 
